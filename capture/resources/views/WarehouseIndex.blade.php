@@ -6,3 +6,5 @@
     <a href="/Warehouse/{{$data->id}}/edit"> Edit </a>
 @endforeach
 </div>
+
+<!-- test -->

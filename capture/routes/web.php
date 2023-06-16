@@ -14,9 +14,9 @@ use App\Http\Controllers\WarehouseController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Route::get('/WarehouseCreate', function () {
 //     return view('WarehouseCreate');

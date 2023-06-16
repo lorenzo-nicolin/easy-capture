@@ -50,7 +50,7 @@ class WarehouseController extends Controller
 
         $WarehouseModel->save();
 
-        return redirect()->route('Warehouse');
+        return redirect('Warehouse');
 
     }
 
@@ -94,6 +94,21 @@ class WarehouseController extends Controller
     public function update(Request $request, $id)
     {
         //
+
+        $WarehouseModel = WarehouseModel::find($id);
+
+       
+        $WarehouseModel->name = $request->input('name');
+        $WarehouseModel->address = $request->input('address');
+        $WarehouseModel->status = $request->input('status');
+
+        $WarehouseModel->update();
+
+        return redirect('Warehouse');
+
+        // print 'test';
+
+
     }
 
     /**
